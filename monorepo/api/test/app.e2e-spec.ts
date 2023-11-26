@@ -33,8 +33,7 @@ describe('App e2e', () => {
 
   describe('Auth', () => {
     const dto: AuthDto = {
-      firstname: 'hamza',
-      lastname: 'sbiha',
+      fullname: 'hamza sbiha',
       email: 'hamz1456@gmail.com',
       password: '123456',
       phonenumber: '50651248',
@@ -118,14 +117,18 @@ describe('App e2e', () => {
       });
     });
     describe('EditUser', () => {
+      enum Verification {
+        verify = 'verify',
+        NotVerified = 'NotVerified',
+      }
       it('should edit  User', () => {
         const dto: EditUserDto = {
-          firstname: 'hamzanew',
-          lastname: 'sbihanew',
+          fullname: 'hamzanew sbihanew',
           email: 'hamza123456@gmail.com',
           password: '123456',
           phonenumber: '25918407',
-          // accountType: UserRole.ADMIN,
+          VN: Verification.verify,
+          verification: Verification.verify
         };
         return pactum
           .spec()
@@ -163,16 +166,19 @@ describe('App e2e', () => {
         title: 'myfirstProduct',
         content: 'new content',
         category: 'Chien',
-        quantity: 4,
-        availability: true,
-        mainimg:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-5-zFuJrEpCAb6GBo_0sectextImpADWK0BJUKavm&s',
+        quantity: "4",
         images: [
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-5-zFuJrEpCAb6GBo_0sectextImpADWK0BJUKavm&s',
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-5-zFuJrEpCAb6GBo_0sectextImpADWK0BJUKavm&s',
         ],
         priceForCompany: '18dt',
         priceForPersonal: '24dt',
+        id: 0,
+        market: '',
+        typefood: '',
+        stock: 0,
+        published: 'Private',
+        orderInfoId: 0
       };
       it('Should create product', () => {
         return pactum
@@ -199,12 +205,16 @@ describe('App e2e', () => {
         title: 'new title',
         content: 'new describtion',
         category: 'chat',
-        quantity: 2,
-        availability: true,
-        mainimg: 'ojpeozape',
+        quantity: "2",
         images: ['ojpeozape', 'ojpeozape'],
         priceForCompany: '21dt',
         priceForPersonal: '26dt',
+        id: 0,
+        market: '',
+        typefood: '',
+        stock: 0,
+        published: 'Private',
+        orderInfoId: 0
       };
       it('Should edit product by id', () => {
         return pactum
