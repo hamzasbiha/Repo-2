@@ -1,0 +1,102 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserDto {
+  firstname: String!
+}
+
+type ProductsDto {
+  id: Float!
+  title: String!
+  content: String!
+  category: String!
+  market: String!
+  qunatite: String!
+  stock: Float!
+  availability: Boolean!
+  mainimg: String!
+  images: [String!]
+  priceForPersonal: String!
+  priceForCompany: String!
+}
+
+type EditProductsDto {
+  title: String!
+  content: String!
+  category: String!
+  market: String!
+  qunatite: String!
+  stock: Float!
+  availability: Boolean!
+  mainimg: String!
+  images: [String!]
+  priceForPersonal: String!
+  priceForCompany: String!
+}
+
+type ProductsDtoQl {
+  id: Int!
+  title: String!
+  content: String!
+  price: Float!
+  category: String!
+  market: String!
+  qunatite: String!
+  mainimg: String!
+  availability: Boolean!
+}
+
+type CartDto {
+  itemId: Float!
+}
+
+type Query {
+  getUsers: [UserDto!]!
+  getUser: [UserDto!]!
+  getProducts(category: String, title: String): [ProductsDto!]!
+  getProductById(productId: Int!): [ProductsDto!]!
+  getCard: [CartDto!]!
+  getCardByid(cartId: Int!): [CartDto!]!
+}
+
+type Mutation {
+  createProduct(productInput: CreateProduct!): ProductsDto!
+  editProduct(productId: Int!, productInput: ProductInput!): EditProductsDto!
+  deleteProduct(productId: Int!): ProductsDtoQl!
+  addToCard(cartInput: CartInput!): CartDto!
+}
+
+input CreateProduct {
+  id: Float!
+  title: String!
+  content: String!
+  category: String!
+  market: String!
+  qunatite: String!
+  stock: Float!
+  availability: Boolean!
+  mainimg: String!
+  images: [String!]
+  priceForPersonal: String!
+  priceForCompany: String!
+}
+
+input ProductInput {
+  title: String!
+  content: String!
+  price: Float!
+  category: String!
+  market: String!
+  qunatite: String!
+  availability: Boolean!
+  stock: Int!
+  mainimg: String!
+  images: [String!]
+  priceForPersonal: String!
+  priceForCompany: String!
+}
+
+input CartInput {
+  itemId: Float!
+}

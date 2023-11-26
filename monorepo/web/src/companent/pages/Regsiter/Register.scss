@@ -1,0 +1,191 @@
+$white: #fff;
+$google-blue: #4285f4;
+$button-active-blue: #1669f2;
+.Register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e9ecef;
+    // max-height: 750px;
+    height: 100%;
+    width: 550px;
+    padding: 50px;
+    // background: url("../../../assets/waves/banner1.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 15px;
+    gap: 15px;
+    h1 {
+      letter-spacing: 5px;
+      font-size: 55px;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      input {
+        border: 1px solid rgba(107, 77, 77, 0.25);
+        outline: none;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        background-color: #ced4da;
+        font-size: 1em;
+      }
+
+      span {
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+    }
+    .input-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 25px;
+      .inputitem {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        width: 280px;
+        gap: 15px;
+        input {
+          border: 1px solid rgba(107, 77, 77, 0.25);
+          outline: none;
+          border-radius: 10px;
+          width: 100%;
+          padding: 10px;
+          background-color: #ced4da;
+          font-size: 1em;
+        }
+
+        span {
+          position: absolute;
+          left: 0;
+          padding: 10px;
+          pointer-events: none;
+          font-size: 1em;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .inputitemCheckbox {
+      display: flex;
+      align-items: start;
+      gap: 2px;
+      margin-right: 135px;
+    }
+    .or {
+      width: 430px;
+      height: 2px;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+      .center {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -10px;
+        margin-left: 189px;
+        padding: 0 10px 0px 10px;
+      }
+    }
+    .google-btn {
+      width: 184px;
+      height: 42px;
+      background-color: $google-blue;
+      border-radius: 2px;
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+      width: 52%;
+      cursor: pointer;
+      .google-icon-wrapper {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: $white;
+      }
+      .google-icon {
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 11px;
+        width: 18px;
+        height: 18px;
+      }
+      .btn-text {
+        float: right;
+        margin: 11px 11px 0 0;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+      }
+      &:hover {
+        box-shadow: 0 0 6px $google-blue;
+      }
+      &:active {
+        background: $button-active-blue;
+      }
+    }
+    .radio {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .itemradio {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    button {
+      border: none;
+      outline: none;
+      height: 40px;
+      width: 280px;
+      border-radius: 5px;
+      background-color: #adb5bd;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 0 6px #9ef01a;
+      }
+      &:active {
+        background: #70e000;
+      }
+    }
+    .navgationto {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: justify;
+      color: rgb(0, 0, 0);
+      .linkpage {
+        color: #3f612d;
+      }
+    }
+  }
+}

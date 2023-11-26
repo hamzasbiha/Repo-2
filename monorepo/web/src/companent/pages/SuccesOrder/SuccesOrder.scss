@@ -1,0 +1,25 @@
+.succes {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 25px;
+  height: 800px;
+  width: 100%;
+  margin: 15px;
+  gap: 20px;
+  .icon {
+    font-size: 40px;
+    transform: scale(3);
+  }
+  button {
+    border: none;
+    outline: none;
+    height: 45px;
+    width: 200px;
+    background-color: #38b000;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+}

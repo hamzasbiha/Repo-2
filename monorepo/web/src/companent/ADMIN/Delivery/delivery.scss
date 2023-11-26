@@ -1,0 +1,44 @@
+.delivery {
+  width: 100%;
+  display: flex;
+  .delivery-container {
+    flex: 6;
+    .top-delivery {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+      padding: 20px;
+      margin: 30px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgb(216, 93, 36);
+      h1 {
+        color: rgb(216, 93, 36);
+        font-size: 20px;
+      }
+    }
+    .bottom {
+      display: flex;
+      height: 600px;
+    }
+  }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px dotted darkblue;
+      cursor: pointer;
+    }
+    .editButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: green;
+      border: 1px dotted rgba(20, 220, 153, 0.603);
+      cursor: pointer;
+    }
+  }
+}

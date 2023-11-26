@@ -1,0 +1,61 @@
+.sells {
+  width: 100%;
+
+  .data-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 15px;
+    span {
+      color: green;
+      font-size: 16px;
+      font-weight: 400px;
+      border: 1px solid green;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .cellImage {
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .modal-delete {
+      h1 {
+        color: red;
+      }
+    }
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px dotted darkblue;
+      cursor: pointer;
+    }
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted crimson;
+      cursor: pointer;
+    }
+    .editButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: green;
+      border: 1px dotted rgba(20, 220, 153, 0.603);
+      cursor: pointer;
+    }
+  }
+}

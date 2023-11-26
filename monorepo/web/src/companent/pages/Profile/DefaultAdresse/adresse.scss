@@ -1,0 +1,49 @@
+.ads {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  .col-l {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    gap: 10px;
+    margin-bottom: 280px;
+    .adresse {
+      max-width: 400px;
+      text-align: justify;
+      padding: 15px;
+      background-color: #ecf8f8;
+      outline: 1px solid #bcb8b1;
+      border-radius: 5px;
+      .top-section {
+        display: flex;
+        align-items: center;
+        gap: 290px;
+        span {
+          padding: 7px;
+          transition: all 0.5s ease;
+          cursor: pointer;
+          &:hover {
+            background-color: #caffbf;
+            border-radius: 25px;
+            transition: all 0.5s ease;
+            outline: 1px solid #bcb8b1;
+            transform: scale(1.2);
+          }
+          &:active {
+            transform: scale(1);
+          }
+        }
+      }
+      h1 {
+        font-size: 15px;
+      }
+      p {
+        color: gray;
+      }
+    }
+    .row {
+    }
+  }
+}

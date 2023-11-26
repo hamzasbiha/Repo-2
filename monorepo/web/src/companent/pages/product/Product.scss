@@ -1,0 +1,209 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  .wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 0 250px;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      span {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 25px 150px;
+      .left-product {
+        display: flex;
+        gap: 20px;
+
+        .row-image {
+          img {
+            border-radius: 15px;
+            background-color: #dee2e6;
+            padding: 5px;
+            width: 100px;
+          }
+        }
+        .main-image {
+          img {
+            height: 600px;
+            width: 650px;
+            object-fit: cover;
+            border-radius: 15px;
+            background-color: #dee2e6;
+            padding: 5px;
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: start;
+      flex: 1;
+      width: 100%;
+      margin-top: 25px;
+      flex-direction: column;
+      justify-content: start;
+      gap: 45px;
+      padding: 25px;
+      h1 {
+        letter-spacing: 3px;
+      }
+      .category {
+        display: flex;
+        align-items: center;
+        .row {
+          display: flex;
+          span {
+            font-weight: bold;
+            font-size: 18px;
+          }
+          .cato {
+            font-size: 16px;
+            font-weight: 800px;
+            color: #343a40;
+          }
+        }
+      }
+      .priceForCompany {
+        display: flex;
+
+        .row {
+          display: flex;
+          justify-content: space-around;
+          gap: 110px;
+          span {
+            font-weight: bold;
+            font-size: 28px;
+          }
+          .cato {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #343a40;
+          }
+        }
+      }
+      .quantity {
+        display: flex;
+        .row {
+          display: flex;
+          justify-content: space-around;
+          gap: 50px;
+          span {
+            font-weight: bold;
+            font-size: 28px;
+          }
+          .cato {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #343a40;
+          }
+        }
+      }
+      .add-cart-dec {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        button {
+          background-color: #a7c957;
+          outline: 1px solid #6c757d;
+          outline: none;
+          border: none;
+          padding: 15px;
+          border-radius: 85px;
+          width: 50px;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      .add-cart {
+        display: flex;
+        button {
+          background-color: #a7c957;
+          outline: 1px solid #6c757d;
+          outline: none;
+          border: none;
+          font-weight: bold;
+          padding: 15px;
+          font-size: 18px;
+          width: 350px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .divier-spon {
+    margin-left: 400px;
+    height: 80px;
+    width: 70%;
+    background-color: #a7c957;
+    border-radius: 15px;
+  }
+  .bottom {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 45px;
+    margin-right: 35px;
+    .divier {
+      height: 5px;
+      width: 100%;
+      background-color: #a7c957;
+    }
+    .row-recommended {
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 25px;
+        height: 50px;
+        text-align: center;
+        height: 50px;
+        padding: 10px;
+      }
+    }
+    .card {
+      background-color: #f2f2f2;
+      h2 {
+        font-size: 18px;
+      }
+      p {
+      }
+      ul {
+        li {
+          font-size: 17px;
+          font-weight: bold;
+        }
+      }
+    }
+    h1 {
+      text-decoration: underline;
+    }
+  }
+}

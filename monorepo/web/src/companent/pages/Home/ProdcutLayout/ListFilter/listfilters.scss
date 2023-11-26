@@ -1,0 +1,116 @@
+.list-filter {
+  padding: 20px;
+  .wrapper-listfilter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    .top-image {
+      display: flex;
+      // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 5px;
+      border-radius: 15px;
+      img {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 35px;
+        width: 150px;
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+        transition: all 1s ease;
+        cursor: pointer;
+        &:hover {
+          transition: all 0.5s ease;
+          transform: scale(1.1);
+        }
+      }
+      h1 {
+        margin-top: 125px;
+        padding: 5px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .list-filter-item {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 250px;
+      gap: 10px;
+      .list {
+        max-height: 700px;
+        overflow-y: auto;
+      }
+      .top-filter-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+
+        .Arrow-filter {
+          transition: all 0.3s ease;
+
+          &.Showing-Chien {
+            transform: rotate(90deg);
+            transition: all 0.3s ease;
+          }
+          &.Showing-Chat {
+            transform: rotate(90deg);
+            transition: all 0.3s ease;
+          }
+          &.Showing-Oiseaux {
+            transform: rotate(90deg);
+            transition: all 0.3s ease;
+          }
+          &.Showing-showingMarket {
+            transform: rotate(90deg);
+            transition: all 0.3s ease;
+          }
+        }
+      }
+      .filter-radio {
+        display: flex;
+        flex-direction: column;
+        accent-color: #a7c957;
+        border: none;
+        transition: all 1s ease;
+        gap: 15px;
+        .rest-filer {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          gap: 125px;
+          width: 100%;
+          margin-top: 35px;
+          span {
+            padding: 5px;
+            color: #f8f9fa;
+            background-color: #a7c957;
+            border-radius: 50%;
+            // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: 1px solid gray;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:active {
+              transition: all 0.3s ease;
+              transform: scale(0.9);
+            }
+          }
+        }
+
+        button {
+          border: none;
+          font-size: 18px;
+          margin-left: 200px;
+          margin-top: 35px;
+          background-color: #a7c957;
+          // color: #f8f9fa;
+          // font-weight: bold;
+          padding: 5px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

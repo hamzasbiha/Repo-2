@@ -1,0 +1,17 @@
+.list-grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 20px;
+  padding: 10px;
+  margin-bottom: 105px;
+  .grid-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  .empty-div {
+    display: flex;
+    height: 150px;
+  }
+}

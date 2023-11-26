@@ -1,0 +1,46 @@
+.Fp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+  .forget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 450px;
+    background-color: #e9ecef;
+    // border: 1px solid rgba(62, 243, 90, 1);
+    padding: 50px;
+    // background: url("../../../../assets/waves/wave\ \(1\).png");
+    border-radius: 15px;
+    gap: 15px;
+    .label {
+      padding: 5px;
+      height: 30px;
+    }
+    input {
+      border: none;
+      outline: none;
+      border: 1px solid rgba(107, 77, 77, 0.25);
+      height: 30px;
+      width: 260px;
+      border-radius: 10px;
+      // border: 2px solid rgba(62, 243, 90, 1);
+    }
+    .btn {
+      button {
+        border: none;
+        outline: none;
+        padding: 5px;
+        height: 30px;
+        background-color: rgba(62, 243, 90, 1);
+        width: 260px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+}

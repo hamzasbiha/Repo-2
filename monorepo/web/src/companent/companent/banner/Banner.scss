@@ -1,0 +1,11 @@
+.banner {
+  display: flex;
+  background: url("../../../assets/manip/background.png");
+  background-position: center;
+  background-attachment: fixed;
+  img {
+    height: 650px;
+    object-fit: cover;
+    width: 100%;
+  }
+}

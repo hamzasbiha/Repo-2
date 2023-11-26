@@ -1,0 +1,60 @@
+.bubble {
+  position: fixed;
+  z-index: 1000;
+  right: 20px;
+  bottom: 20px;
+  transition: all 1s ease;
+  .bubble-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .ball {
+      background-color: #8ad167;
+      height: 50px;
+      width: 50px;
+      border-radius: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f1faee;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      transform: translateY(0);
+      transition: transform 0.3s ease, top 0.3s ease;
+    }
+
+    .ball-1 {
+      background-color: #8ad167;
+      height: 50px;
+      width: 50px;
+      border-radius: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f1faee;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      cursor: pointer;
+      transition: transform 1s ease, top 1s ease;
+    }
+
+    .ball-2 {
+      background-color: #8ad167;
+      height: 50px;
+      width: 50px;
+      border-radius: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f1faee;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      transition: transform 1s ease, top 1s ease;
+    }
+  }
+}
+
+.bubble.visible {
+  display: block;
+}

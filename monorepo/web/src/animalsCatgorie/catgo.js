@@ -1,0 +1,38 @@
+export default {
+  Chien: [
+    "Big one dog adult",
+    "bigone 20kg",
+    "fish 15kg suprema",
+    "PUPPY 4kg",
+    "ADULT chien 15kg",
+  ],
+  Chats: [
+    "Kitten 15kg",
+    "Supreme kiten",
+    "fish 15kg suprema",
+    "supreme kiten 800 GR",
+    "STERILIZED 650 kg",
+  ],
+  Oiseaux: [
+    "MYCOTOS 250g",
+    "OROPASR 1 kg",
+    "PAROCHETTI 20 kg",
+    "PERILLA 15kg",
+    "PINETA WHITE PAST 1kg",
+    "PINETA WHITE PAST 25kg",
+    "PINETA WHITE PAST 6kg",
+  ],
+  marque: ["PINETA", "MYCOTOS", "STERILIZED", "PERILLA", "PUPPY", "fish"],
+  quantité: [
+    "25kg",
+    "1kg",
+    "2kg",
+    "20kg",
+    "200g",
+    "500kg",
+    "4kg",
+    "5kg",
+    "15kg",
+    "6kg",
+  ],
+};

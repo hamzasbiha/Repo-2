@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@438&family=Roboto+Mono:wght@300&display=swap");
+.Details {
+  display: flex;
+  gap: 10px;
+  background-color: #f3f3f3;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 200px;
+    .inforamtion {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #e9ecef;
+      outline: 1px solid #bcb8b1;
+      border-radius: 5px;
+      font-weight: 600px;
+      padding: 20px;
+      .top-section {
+        display: flex;
+        align-items: center;
+        span {
+          padding: 7px;
+          transition: all 0.5s ease;
+
+          cursor: pointer;
+          &:hover {
+            background-color: #caffbf;
+            border-radius: 25px;
+            transition: all 0.5s ease;
+            outline: 1px solid #bcb8b1;
+            transform: scale(1.2);
+          }
+          &:active {
+            transform: scale(1);
+          }
+        }
+      }
+      h1 {
+        font-size: 15px;
+        font-weight: 600px;
+        // font-family: 'Quicksand', sans-serif;
+      }
+    }
+    .row {
+      flex: 1;
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .col-l {
+    display: flex;
+    flex: 2;
+    gap: 10px;
+    .adresse {
+      max-width: 400px;
+      text-align: justify;
+      padding: 15px;
+      background-color: #ecf8f8;
+      outline: 1px solid #bcb8b1;
+      border-radius: 5px;
+      .top-section {
+        display: flex;
+        align-items: center;
+        gap: 290px;
+        span {
+          padding: 7px;
+          transition: all 0.5s ease;
+          cursor: pointer;
+          &:hover {
+            background-color: #caffbf;
+            border-radius: 25px;
+            transition: all 0.5s ease;
+            outline: 1px solid #bcb8b1;
+            transform: scale(1.2);
+          }
+          &:active {
+            transform: scale(1);
+          }
+        }
+      }
+      h1 {
+        font-size: 15px;
+      }
+      p {
+        color: gray;
+      }
+    }
+    .row {
+    }
+  }
+}

@@ -1,0 +1,193 @@
+.drawer {
+  top: 0;
+  position: fixed;
+  height: 100%;
+  max-width: 400px;
+  transform: translateX(-200%);
+  background-color: #f2f2f2;
+  transition: all 0.3s ease-in;
+  color: #435334;
+  &.open {
+    display: flex;
+    transform: translateX(0%);
+    transition: all 0.5s ease;
+    z-index: 4000;
+  }
+  .warpper {
+    max-width: 450px;
+    .empty-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        text-align: center;
+        padding: 10px;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+        height: 35px;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #8ad167;
+        justify-content: center;
+        width: 150px;
+        transition: all 0.5s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+        &:active {
+          transition: all 0.5s ease;
+          transform: scale(0.95);
+        }
+      }
+    }
+    .top-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      gap: 200px;
+      span {
+        cursor: pointer;
+        &:hover {
+          color: gray;
+        }
+      }
+      h4 {
+        font-size: 20px;
+        margin: 10px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+    .list-cart-drawer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      gap: 20px;
+      .commande {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        background-color: #8ad167;
+        color: #f3f3f3;
+        padding: 10px;
+        border-radius: 7px;
+        // width: 340px;
+        font-weight: bold;
+        transition: all 0.5s ease;
+        &:active {
+          transform: scale(0.95);
+        }
+        &:hover {
+          background-color: #50962e;
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 400px;
+        border: none;
+        margin: 15px;
+        margin-bottom: 55px;
+        &:hover {
+          color: #bcbcbc;
+        }
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+      .item {
+        display: flex;
+        // margin-left: 15px;
+        gap: 15px;
+        .info {
+          p {
+            color: gray;
+          }
+          .top-item {
+            h3 {
+              font-size: 12px;
+            }
+            .prix {
+              font-weight: bold;
+            }
+            display: flex;
+            align-items: center;
+            // gap: 85px;
+          }
+
+          .add-to-cart {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 5px;
+            padding: 20px;
+            // width: 550px;
+            margin-left: 5px;
+            .left {
+              border-radius: 15px 0 0 15px;
+              padding: 10px;
+              text-align: center;
+              // background-color: rgb(165, 165, 162);
+              border: 1px solid rgb(180, 180, 180);
+              cursor: pointer;
+              &:hover {
+                color: white;
+                background-color: #bcbcbc;
+              }
+            }
+            .center {
+              // background-color: 	#7a6961;
+              padding: 10px;
+              text-align: center;
+              cursor: pointer;
+              input {
+                width: 20px;
+                outline: none;
+              }
+            }
+            .right {
+              padding: 10px;
+              border-radius: 0px 15px 15px 0px;
+              text-align: center;
+              cursor: pointer;
+              border: 1px solid rgb(180, 180, 180);
+              &:hover {
+                color: white;
+                background-color: #bcbcbc;
+              }
+            }
+            .remove {
+              border: 1px solid rgb(180, 180, 180);
+              padding: 5px;
+              border-radius: 25px;
+              cursor: pointer;
+              &:hover {
+                color: white;
+                background-color: #bcbcbc;
+              }
+            }
+          }
+        }
+
+        img {
+          height: 120px;
+          width: 120px;
+          border: 1px solid #bcbcbc;
+          padding: 5px;
+          border-radius: 15px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

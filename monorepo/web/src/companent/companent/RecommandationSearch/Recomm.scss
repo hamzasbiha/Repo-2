@@ -1,0 +1,27 @@
+// Recommendation.scss
+.suggestions {
+  position: absolute;
+  top: 100%; /* Position the suggestions below the input */
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none; /* Hide the top border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}

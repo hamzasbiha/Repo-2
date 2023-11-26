@@ -1,0 +1,93 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int           @id @default(autoincrement())
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  email        String        @unique
+  fullname    String?
+  password     String?
+  phonenumber  String?
+  accountType  UserRole?     @default(Personal)
+  verification Verification? @default(NotVerified)
+  VN           String?
+  Cart         Cart?
+}
+
+model Product {
+  id               Int          @id @default(autoincrement())
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+  title            String
+  typefood         String?
+  content          String?
+  category         String?
+  market           String?
+  quantity         String?
+  images           String[]
+  priceForPersonal String
+  priceForCompany  String
+  published        IsPublished  @default(Private)
+  stock            Int?
+  carts            Cart?        @relation(fields: [cartId], references: [id])
+  order_Items      Order_Item[]
+  cartId           Int?         @unique
+}
+
+model Order_Item {
+  id                Int      @id @default(autoincrement())
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  quantity_per_item Int
+  products          Product  @relation(fields: [productId], references: [id])
+  carts             Cart?    @relation(fields: [cartId], references: [id])
+  cartId            Int?
+  productId         Int
+}
+
+model Cart {
+  id          Int          @id @default(autoincrement())
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  email       String
+  adresse     String
+  ville       String
+  codepos     String
+  phone       String
+  totalPrice  Float
+  status      Status?      @default(Pending)
+  User        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      Int          @unique
+  products    Product[]
+  order_Items Order_Item[]
+}
+
+// ENUM ROLE TABLES
+enum IsPublished {
+  Private
+  Public
+}
+
+enum Status {
+  Pending
+  Deliverd
+  Refund
+}
+
+enum UserRole {
+  Personal
+  Society
+  Admin
+}
+
+enum Verification {
+  verify
+  NotVerified
+}

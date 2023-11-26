@@ -1,0 +1,17 @@
+.map-lealet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  h1 {
+    text-align: center;
+    font-size: 45px;
+    &::first-letter {
+      color: #40916c;
+      font-size: 3rem;
+    }
+    &:hover {
+      color: #19293a;
+    }
+    cursor: pointer;
+  }
+}

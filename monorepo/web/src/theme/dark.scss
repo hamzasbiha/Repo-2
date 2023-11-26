@@ -1,0 +1,105 @@
+.App.dark {
+  background-color: #212529;
+  color: rgb(156, 156, 156);
+  .Chart {
+    color: rgba(228, 228, 228, 0.219);
+  }
+  .table-data {
+    background-color: #222;
+    .tableCell {
+      color: rgb(156, 156, 156);
+    }
+  }
+  .data-client-grid {
+    color: rgb(156, 156, 156);
+    span {
+      color: rgb(156, 156, 156);
+    }
+    .viewButton,
+    .deleteButton {
+      color: rgb(156, 156, 156);
+      border: none;
+    }
+  }
+  .product-grid {
+    color: rgb(156, 156, 156);
+  }
+  .sells {
+    .notverified,
+    .verified {
+      color: rgb(156, 156, 156);
+    }
+    .viewButton,
+    .editButton,
+    .deleteButton {
+      color: rgb(156, 156, 156);
+      border: none;
+    }
+    .data-title {
+      span {
+        color: rgb(156, 156, 156);
+        border: 1px solid rgb(156, 156, 156);
+      }
+    }
+  }
+  .featured,
+  .wrapper {
+    background-color: #212529;
+    color: rgb(156, 156, 156);
+  }
+  .card {
+    background-color: #343a40;
+    color: rgb(156, 156, 156);
+  }
+  .ProductsList,
+  .grid-list {
+    .list {
+      background-color: #6c757d;
+    }
+    color: rgb(156, 156, 156);
+  }
+  .main-container,
+  .wrapper,
+  .left {
+    background-color: #343a40;
+    color: rgb(156, 156, 156);
+    .left {
+      background-color: #6c757d;
+      color: rgb(177, 173, 173);
+    }
+  }
+  .navbar {
+    background-color: #212529;
+  }
+  .right {
+    .drop-menu {
+      background-color: #343a40;
+
+      .item {
+        background-color: #6c757d;
+        color: rgb(177, 173, 173);
+      }
+    }
+  }
+  .login {
+    background-color: #212529;
+    color: rgb(177, 173, 173);
+    form {
+      background-color: #212529;
+      color: rgb(177, 173, 173);
+    }
+  }
+  .Register {
+    background-color: #212529;
+    color: rgb(177, 173, 173);
+    form {
+      background-color: #212529;
+      color: rgb(177, 173, 173);
+      .row {
+        span {
+          color: rgb(177, 173, 173);
+        }
+      }
+    }
+  }
+}

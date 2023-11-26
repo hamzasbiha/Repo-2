@@ -1,0 +1,34 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+i18n.use(initReactI18next).init({
+  debug: true,
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+  resources: {
+    en: {
+      translation: {
+        Boutique: "Shop",
+        Chien: "Dog",
+        Chats: "Cats",
+        Oiseaux: "Bird",
+        Compte: "Profile",
+        Deconnexion: "Log out",
+      },
+    },
+    fr: {
+      translation: {
+        Boutique: "Boutique",
+        Chien: "Chien",
+        Chats: "Chats",
+        Oiseaux: "Oiseaux",
+        Compte: "Compte",
+        Deconnexion: "Deconnexion",
+      },
+    },
+  },
+});
+
+export default i18n;

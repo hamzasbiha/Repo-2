@@ -1,0 +1,18 @@
+.ProdcutLayout {
+  .wrapper {
+    display: flex;
+    .left {
+      flex: 1;
+
+      .pagnite {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .right {
+      flex: 4;
+    }
+  }
+}

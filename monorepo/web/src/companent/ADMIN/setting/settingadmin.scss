@@ -1,0 +1,30 @@
+.setting-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 750px;
+  .nav-screen {
+    display: flex;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    padding: 20px;
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    .link-title {
+      color: gray;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      &.active {
+        color: rgb(0, 127, 185);
+        transform: scale(1.05);
+        text-decoration: underline;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

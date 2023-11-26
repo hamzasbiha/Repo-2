@@ -1,0 +1,129 @@
+.navbar {
+  height: 160px;
+  // width: fit-content;
+  position: relative;
+  top: 0;
+  // padding: 5px 5px;
+  //TODO : on scroll the postion change to fixed
+  .main-nav {
+    .top {
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #a1a1a1;
+      width: 100%;
+      .item {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+    }
+    .wrapper-nav {
+      padding: 15px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      z-index: 2;
+      transition: all 0.5s ease;
+      .item {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+      }
+
+      .left-nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .item {
+          font-size: 30px;
+          letter-spacing: 2px;
+        }
+        img {
+          width: 75px;
+          height: 75px;
+          object-fit: cover;
+        }
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: #f2f2f2;
+        position: relative;
+        // width: 250px;
+        span {
+          position: absolute;
+          color: gray;
+          margin-right: 255px;
+          background-color: white;
+          width: 20px;
+          height: 18px;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          border-radius: 15px 0px 0px 15px;
+        }
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .icons {
+          display: flex;
+          gap: 15px;
+          cursor: pointer;
+          .cartIcon {
+            position: relative;
+            span {
+              font-size: 12px;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              position: absolute;
+              right: -10px;
+              top: -10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #31cb00;
+            }
+          }
+        }
+        .drop-menu {
+          position: absolute;
+          background-color: white;
+          padding: 30px 20px;
+          border-radius: 6px;
+          top: 110px;
+          right: 75px;
+          z-index: 3000;
+          width: 12%;
+          .space {
+            height: 15px;
+          }
+          .item {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+              sans-serif;
+            font-size: 22px;
+            gap: 45px;
+            color: #272932;
+            padding: 10px 20px;
+            transition: all 1s ease;
+            background-color: #bee9e8;
+            &:hover {
+              background-color: #bee9e8;
+              color: #272932;
+              transition: all 1s ease;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

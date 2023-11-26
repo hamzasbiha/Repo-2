@@ -1,0 +1,53 @@
+.widget {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  gap: 30px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border-radius: 10px;
+  height: 100px;
+  .left-widget,
+  .right-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      color: gray;
+    }
+    .cart-item-user {
+      font-weight: 300px;
+      font-size: 20px;
+    }
+    .email {
+      font-size: 14px;
+    }
+    .link-widget {
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+      width: fit-content;
+    }
+    .percantage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      &.positive {
+        color: green;
+      }
+      &.negative {
+        color: red;
+      }
+      .icon {
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 5px;
+        align-self: flex-end;
+      }
+    }
+  }
+}

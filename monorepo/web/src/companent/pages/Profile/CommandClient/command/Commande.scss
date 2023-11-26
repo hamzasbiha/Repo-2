@@ -1,0 +1,140 @@
+.top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+  .isIssus {
+    font-weight: bold;
+  }
+  .isPending {
+    font-weight: bold;
+  }
+  .line  {
+    position: absolute;
+    height: 1px;
+    width: 160px;
+    transition: all 0.5s ease;
+    left: 0%;
+    background-color: black;
+    bottom: 0;
+  }
+  h1 {
+    font-size: 23px;
+    top: 0;
+  }
+
+  .item-incl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .tt-price {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+  .cnl-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15px;
+    button {
+      border: none;
+      font-weight: bold;
+      background-color: #168aad;
+      padding: 5px;
+      border-radius: 5px;
+      color: #dee2e6;
+    }
+    span {
+      text-decoration: underline;
+      font-size: 18px;
+    }
+  }
+}
+.left {
+  display: flex;
+  flex: 1;
+  border-radius: 5px;
+  padding: 25px;
+  .item-cart {
+    display: flex;
+    text-align: justify;
+    width: 100%;
+    gap: 20px;
+    .item-c {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-height: 100px;
+      h1 {
+        font-size: 14px;
+      }
+      .image {
+        display: flex;
+        align-items: center;
+        background-color: #ced4da;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+        img {
+          height: 100px;
+          object-fit: cover;
+        }
+      }
+      .t-s {
+        display: flex;
+        flex-direction: column;
+        span {
+          background-color: #168aad;
+          width: fit-content;
+          padding: 5px;
+          font-weight: bold;
+          border-radius: 10px;
+          color: #dee2e6;
+        }
+      }
+    }
+    .item-det {
+      display: flex;
+      align-items: start;
+      margin-top: 5px;
+      b {
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    .item {
+      display: flex;
+      background-color: #dee2e6;
+      border-radius: 5px;
+      // padding: 10px;
+      border-radius: 5px;
+      transition: all 1s ease;
+      &:hover {
+        background-color: #ced4da;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+      span {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .pending {
+        color: #168aad;
+      }
+    }
+  }
+}

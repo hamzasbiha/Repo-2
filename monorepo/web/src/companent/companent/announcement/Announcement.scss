@@ -1,0 +1,25 @@
+.announcement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(95, 94, 94, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../../src/assets/manip/items.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  padding: 10px;
+  h1 {
+    color: #ced4da;
+    height: 50px;
+    font-size: 65px;
+    padding: 20px;
+    opacity: 80%;
+    cursor: pointer;
+    &:hover {
+      opacity: 100%;
+    }
+  }
+}

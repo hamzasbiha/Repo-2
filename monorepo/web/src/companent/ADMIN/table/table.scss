@@ -1,0 +1,24 @@
+.table {
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+  }
+
+  .puplish {
+    padding: 5px;
+    border-radius: 5px;
+    &.pub {
+      color: #eaf4f4;
+      background-color: #a7c957;
+      text-align: center;
+      font-weight: 500px;
+    }
+    &.prv {
+      color: #eaf4f4;
+      text-align: center;
+      font-weight: 500px;
+      background-color: #e63946;
+    }
+  }
+}
