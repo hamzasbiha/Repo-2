@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
+import * as express from 'express';
 import * as session from 'express-session';
 import * as passport from 'passport';
 import { ConfigService } from '@nestjs/config';
@@ -18,7 +19,6 @@ async function bootstrap() {
     }),
   );
   app.use(passport.initialize());
-  app.use(passport.session());
   app.enableCors();
   app.useGlobalPipes(
     new ValidationPipe({
