@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ConfigModule, ConfigService } from '@nestjs/config';
+import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { ProductsModule } from './products/products.module';
@@ -13,25 +13,23 @@ import { CartModule } from './cart/cart.module';
 import { MailerModule } from '@nestjs-modules/mailer';
 import { PugAdapter } from '@nestjs-modules/mailer/dist/adapters/pug.adapter';
 import { MailService } from './mail/mail.service';
-
 @Module({
   imports: [
     ConfigModule.forRoot(),
     AuthModule,
     MailerModule.forRootAsync({
-      imports: [ConfigModule],
-      useFactory: async (configService: ConfigService) => ({
+      useFactory: () => ({
         transport: {
-          host: configService.get<string>('MAILER_HOST'),
-          port: configService.get<number>('MAILER_PORT'),
-          secure: configService.get<boolean>('MAILER_SECURE'),
+          host: 'smtp.gmail.com',
+          port: 587,
+          secure: false, // Change after hosting
           auth: {
-            user: configService.get<string>('MAILER_USER'),
-            pass: configService.get<string>('MAILER_PASSWORD'),
+            user: 'testunique66@gmail.com',
+            pass: 'qgck ycvp puxd kvdq',
           },
         },
         defaults: {
-          from: configService.get<string>('MAILER_DEFAULT_FROM'),
+          from: 'testunique66@gmail.com',
         },
         template: {
           dir: __dirname + '/templates',
@@ -41,7 +39,6 @@ import { MailService } from './mail/mail.service';
           },
         },
       }),
-      inject: [ConfigService],
     }),
     UserModule,
     ProductsModule,
@@ -53,7 +50,7 @@ import { MailService } from './mail/mail.service';
     JwtService,
     CartService,
     ProductsService,
-    MailService,
+    MailService
   ],
 })
 export class AppModule {}
